@@ -1,0 +1,25 @@
+#!/bin/bash
+
+is_numeric() {
+grep -E -q "^-?[0-9]+$"
+}
+
+if [ "$1" == "sum" ]
+then
+	if ( echo "$2" | is_numeric )
+	then
+		if ( echo "$3" | is_numeric )
+		then
+			let res=$2+$3
+			echo $res
+		else
+			echo "Error: 4th argument is not numeric. Expected a number."
+			exit 4
+		fi
+	else
+		echo "Error: 3rd argument is not numeric. Expected a number."
+		exit 3
+	fi
+elif [ "$1" == "sub" ]
+then
+
