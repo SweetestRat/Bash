@@ -61,7 +61,7 @@ log)
 exit)
 	if [ $# == 2 ]
 	then
-		exec sh ./ex.sh $2
+		./ex.sh $2
 	else
 		exit 0
 	fi
