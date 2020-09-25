@@ -80,7 +80,7 @@ help)
 interactive)
 	if [ $# == 1 ]
 	then
-		./interactive.sh
+		exec sh ./interactive.sh
 	else
 		echo "Error: Expected 1 argument."
 		exit
