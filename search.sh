@@ -4,7 +4,7 @@ if [ -d $1 ]
 then
 	if [ -r $1 ]
 	then
-		grep -r "$2" "$1"
+		grep -r -s "$2" "$1"
 	else
 		echo "Error: '$1': Read permission denied"
 		exit
