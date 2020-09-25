@@ -2,9 +2,9 @@
 
 if [ -z $1 ]
 then
-  echo "Zero string. Length = 0."
-  exit
+        echo "Zero string. Length = 0."
+        exit
 else
-  str="$@"
-  echo ${#str}
+        str="$@"
+        echo ${#str}
 fi
