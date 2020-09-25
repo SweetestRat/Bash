@@ -42,7 +42,8 @@ reverse)
 strlen)
 	if [ $# == 2 ]
 	then
-		./length.sh $2
+		shift
+		./length.sh "$@"
 	else
 		echo "Error: Expected 2 arguments."
 		exit
