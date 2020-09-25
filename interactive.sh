@@ -20,8 +20,6 @@ error ()
 	echo "No access"
 }
 
-is_numeric='^[+-]?[0-9]+$'
-
 calc ()
 {
 if [[ -e ./myfunc.sh ]]
