@@ -95,7 +95,7 @@ then
 	echo -e "\e[1;33mEnter 1 argument or enter y to exit without exit code"
 	echo -e "1. exit code or y\e[0m"
 	read ex
-	if [[ "$ex" == "y" ]]
+	if [[ -z "$ex" ]]
 	then
 		exit 0
 	else
