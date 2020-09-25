@@ -1,0 +1,26 @@
+Herzlich Willkommen!
+There are available commands:
+1. calc (works like a calculator for integer numbers)
+	requirements: 3 arguments
+	1: sum / sub / mul / div
+	2 & 3: integer numbers
+2. search (will find a regular expression in the right directory)
+	requirements: 2 arguments
+	1: directory name
+	2: regular expression
+3. reverse (will reverse the text from one file to another)
+	requirements: 2 arguments
+	1: input file (preferably with text in it))
+	2: output file (where to reverse)
+4. strlen (will find the length of the string you entered)
+	requirements: 1 argument 
+	1: string
+5. log (output the warnings and the information sentences from X.log file)
+	requirements: 0 arguments
+6. exit (will exit the program with your exit code ot without it)
+	requirements: 1 or 0 arguments
+	1: exit code
+7. help (will open the help with all available commands)
+	requirements: 0 arguments
+8. interactive (will open the interactive menu)
+	requirements: 0 arguments

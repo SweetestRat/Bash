@@ -682,3 +682,144 @@ nano main.sh
 ./main.sh log | less
 nano main.sh
 exit
+ls
+rm calc
+ls
+rm calcfunc.sh
+rm check1.sh.save
+rm func.sh
+rm exists.sh
+rm hello.s
+rm hello.txt
+rm hell.txt
+rm kuku
+rm heu
+rm hey
+rm main
+rm log.txt
+rm main2.sh
+rm os
+rm OS
+rm OStask
+rm WI.sh
+ls
+rm help.txt
+rm =
+ls
+git init
+git status
+git add .
+git status
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/SweetestRat/Bash.git
+git push -u origin master
+nano main.sh
+./main.sh calc sum 3 5
+./main.sh div 6 5
+./main.sh calc div 6 5
+./main.sh help
+nano main.sh
+nano help.txt
+nano main.sh
+nano help.txt
+nano main.sh
+nano help.txt
+nano main.sh
+nano help.txt
+./main.sh help
+nano help.txt
+nano main.sh
+nano main,sh
+ls
+nano main.sh
+nano interactive.sh
+nanonano interactive.sh
+nano interactive.sh
+ls
+chmod +x interactive.sh
+ls
+./main.sh interactive 
+menu
+nano intractive
+nano interactive.sh
+./main.sh interactive 
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+nano main.sh
+./main.sh interactive
+menu
+ls
+nano interactive.sh
+nano main.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+ls
+nano length.sh
+nano main.sh
+./main.sh strlen hello
+nano interactive.sh
+nano ex.sh
+nano interactive.sh
+nano log.sh
+nano interactive.sh
+nano main.sh
+nano interactive.sh
+./main.sh interactive
+nano interactive.sh
+./main.sh interactive
+ls
+git commit
+git add
+git add .
+git commit
+git status
+git commit -m "second commit"
+git branch -M master
+git remote add origin https://github.com/SweetestRat/Bash.git
+git push -u origin master
+git pull
+git push -u origin master
+git push --help
+git push -u origin master
+git pull
+git pull -u origin master
+git push -u origin master
+gitt pull -u origin master
+git pull -u origin master
+commit
+--commit
+git status
+git add .
+git commit -m second commit
+git push -u origin master
+git add .
+git commit -m second commit
+git merge --abort
+git add .
+git commit -m second commit
+git status
+git pull
+git add .
+git status
+ls
+git init
+git commit -m second commit
+git merge --abort
+git init
+git commit -m second commit
+git add .
+git status

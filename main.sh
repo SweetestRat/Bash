@@ -42,7 +42,7 @@ reverse)
 strlen)
 	if [ $# == 2 ]
 	then
-		echo ${#2}
+		./length.sh $2
 	else
 		echo "Error: Expected 2 arguments."
 		exit
@@ -77,6 +77,12 @@ help)
 ;;
 
 interactive)
-
+	if [ $# == 1 ]
+	then
+		./interactive.sh
+	else
+		echo "Error: Expected 1 argument."
+		exit
+	fi
 ;;
 esac
