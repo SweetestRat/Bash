@@ -70,7 +70,7 @@ strlen ()
 if [[ -e ./length.sh ]]
 then
 	echo -e "\e[1;33mEnter 1 argument:"
-	echo -e "1. string\e[0m"
+	echo -e "1. 'string'\e[0m"
 	read str
 	./length.sh $str
 else
