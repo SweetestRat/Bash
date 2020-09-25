@@ -99,7 +99,7 @@ then
 	then
 		exit 0
 	else
-		./ex.sh $ex
+		exec sh ./ex.sh $ex
 	fi
 else
 	error
