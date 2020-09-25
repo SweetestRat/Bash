@@ -8,7 +8,12 @@ then
 		then
 			if [ -e $2 ]
 			then
-				rev $1 | tac >$2
+				if [ "$1" == "$2" ]
+				then
+					rev $1 | tac >$1
+				else
+					rev $1 | tac >$2
+				fi
 			else
 				touch "$2"
 				rev $1 | tac >$2
