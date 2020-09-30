@@ -2,6 +2,8 @@
 
 is_numeric='^[+-]?[0-9]+$'
 
+isnotnull_num='^-?[1-9][0-9]*$'
+
 if [[ $2 =~ $is_numeric ]]
 then
 	if [[ $3 =~ $is_numeric ]]
@@ -26,7 +28,7 @@ then
 			echo $res
 		;;
 		div)
-			if [[ $3 == 0 ]]
+			if ! [[ $3 =~ $isnotnull_num ]]
 			then
 				echo "Error: cannot divide by zero."
 				exit 0
