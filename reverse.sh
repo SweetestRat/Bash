@@ -33,13 +33,13 @@ then
 			fi
 		else
 			echo "Error: File '$1' is empty"
-			exit
+			exit 5
 		fi
 	else
 		echo "Error: '$1': Read permission denied"
-		exit
+		exit 6
 	fi
 else
 	echo "Error: '$1': No such file found"
-	exit
+	exit 7
 fi
