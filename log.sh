@@ -21,9 +21,9 @@ then
 		done < "/var/log/anaconda/X.log"
 	else
 		echo "Error: Read permission denied."
-		exit
+		exit 6
 	fi
 else
 	echo "Error: No such file or directory."
-	exit
+	exit 7
 fi
