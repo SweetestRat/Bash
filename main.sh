@@ -5,7 +5,7 @@ check () {
 	&& "$1" != "exit" && "$1" != "help" && "$1" != "interactive" ]]
 	then
 		echo "Error: No such function. Please check the 1st argument."
-		exit 0
+		exit 1
 	fi
 }
 
@@ -18,7 +18,7 @@ calc)
 		./myfunc.sh $2 $3 $4
 	else
 		echo "Error: Expected 4 arguments."
-		exit
+		exit 4
 	fi
 ;;
 search)
@@ -27,7 +27,7 @@ search)
 		./search.sh $2 $3
 	else
 		echo "Error: Expected 3 arguments."
-		exit
+		exit 3
 	fi
 ;;
 reverse)
@@ -36,7 +36,7 @@ reverse)
 		./reverse.sh $2 $3
 	else
 		echo "Error: Expected 3 arguments."
-		exit
+		exit 3
 	fi
 ;;
 strlen)
@@ -46,7 +46,7 @@ strlen)
 		./length.sh "$@"
 	else
 		echo "Error: Expected 2 arguments."
-		exit
+		exit 2
 	fi
 ;;
 log)
@@ -55,7 +55,7 @@ log)
 		./log.sh
 	else
 		echo "Error: Expected 1 argument."
-		exit
+		exit 1
 	fi
 ;;
 exit)
@@ -73,7 +73,7 @@ help)
 		cat help.txt
 	else
 		echo "Error: Expected 1 argument."
-		exit
+		exit 1
 	fi
 ;;
 
@@ -83,7 +83,7 @@ interactive)
 		exec sh ./interactive.sh
 	else
 		echo "Error: Expected 1 argument."
-		exit
+		exit 1
 	fi
 ;;
 esac
