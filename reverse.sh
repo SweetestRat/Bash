@@ -8,6 +8,11 @@ then
 		then
 			if [ -e $2 ]
 			then
+				if [[ -d $2 || -d $1 ]]
+				then
+					echo "Error: it's a directory"
+					exit 2
+				fi
 				if [ -w $2 ]
 				then
 					if [ "$1" == "$2" ]
@@ -18,17 +23,17 @@ then
 						rev $1 | tac >$2
 					fi
 				else
-					echo "Error: write permission denied :("
+					echo "Error: no write permission"
 					exit 3
 				fi
 			else
-				if [[ -w $2 && -r $2 ]]
+				if ! touch "$2" 2>/dev/null
 				then
+					echo "Error: np permission to create the file here"
+					exit 4
+				else
 					touch "$2"
 					rev $1 | tac >$2
-				else
-					echo "Error: no read or write permission"
-					exit 4
 				fi
 			fi
 		else
