@@ -11,7 +11,7 @@ then
 		if [[ "$1" != "sum" && "$1" != "sub" && "$1" != "mul" && "$1" != "div" ]]
 		then
 			echo "Error: No such function. Please check the 2nd argument."
-			exit 0
+			exit 2
 		fi
 
 		case $1 in
@@ -31,7 +31,7 @@ then
 			if ! [[ $3 =~ $isnotnull_num ]]
 			then
 				echo "Error: cannot divide by zero."
-				exit 0
+				exit 1
 			else
 				res=$(($2 / $3))
 				echo $res
