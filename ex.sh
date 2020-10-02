@@ -9,9 +9,9 @@ then
 		exit $1
 	else
 		echo "Error: $1 is not in range [0:255]"
-		exit
+		exit 1
 	fi
 else
 	echo "Error: exit code is not numeric"
-	exit
+	exit 2
 fi
