@@ -7,9 +7,9 @@ then
 		grep -r -s "$2" "$1"
 	else
 		echo "Error: '$1': Read permission denied"
-		exit
+		exit 6
 	fi
 else
 	echo "Error: '$1': No such directory"
-	exit
+	exit 7
 fi
