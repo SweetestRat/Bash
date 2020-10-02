@@ -29,7 +29,7 @@ then
 			else
 				if ! touch "$2" 2>/dev/null
 				then
-					echo "Error: np permission to create the file here"
+					echo "Error: no permission to create the file here"
 					exit 4
 				else
 					touch "$2"
